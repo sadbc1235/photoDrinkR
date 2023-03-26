@@ -1,0 +1,116 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.wrap .bg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/pdbg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px);
+  z-index: -3;
+}
+.wrap header {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  text-shadow: 0px 0px 4px #000;
+}
+.wrap section {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+.wrap section .card {
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid #fff;
+  background-color: rgba(2, 2, 2, 0.5);
+  position: relative;
+  z-index: 1;
+}
+.wrap section .card .mainImg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  transition: linear 0.3s;
+}
+.wrap section .card .mainImg img {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wrap section .card .boothName {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: linear 0.3s;
+  position: relative;
+}
+.wrap section .card.click .mainImg {
+  opacity: 1;
+}
+.wrap section .card.click .boothName {
+  opacity: 0;
+}
+.wrap section #boothDetail {
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 5;
+  transition: linear 0.3s 0.5s;
+}
+.wrap section #boothDetail.click {
+  left: 0%;
+}
+.wrap section #boothDetail .inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(2, 2, 2, 0.5);
+}
+.wrap footer {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 4px #000;
+}
+
+/*# sourceMappingURL=main.css.map */

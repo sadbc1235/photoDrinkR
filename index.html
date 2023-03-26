@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTODRINK</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="bg"></div>
+
+        <header>
+            PHOTO DRINK
+        </header>
+        <section>
+            
+            <div class="card">
+                <div class="mainImg">
+                    <img src="/images/bust/bustmain1.png" alt="">
+                </div>
+                <div class="boothName">
+                    Bust Shot
+                </div>
+            </div>
+            <div class="card">
+                <div class="mainImg">
+                    <img src="/images/metal/metal4.png" alt="">
+                </div>
+                <div class="boothName">
+                    Metal
+                </div>
+            </div>
+            <div class="card">
+                <div class="mainImg">
+                    <img src="/images/full/fullshot5.jpg" alt="">
+                </div>
+                <div class="boothName">
+                    Full Shot
+                </div>
+            </div>
+            <div class="card">
+                <div class="mainImg">
+                    <img src="/images/dynamic/dynamic2.png" alt="">
+                </div>
+                <div class="boothName">
+                    Dynamic
+                </div>
+            </div>
+
+            <div id="boothDetail" class="click">
+                <div class="bg"></div>
+                <div class="inner">
+                    <div id="boothHeader">
+                        <div class="btn">Back</div>
+                        <div id="boothName">Bust Shot</div>
+                        <div class="btn">Gallery</div>
+                    </div>
+    
+                    <div id="boothImg"></div>
+
+                    <div id="boothConcepts"></div>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            2022.03.26 All &copy; reserved by KES
+        </footer>
+    </div>
+
+    <script>
+        $('.card').click((e) => {
+            $('.card').removeClass('click');
+            $(e.currentTarget).addClass('click');
+            $('#boothDetail').addClass('click');
+        })
+
+
+    </script>
+</body>
+</html>
